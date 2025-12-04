@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/Button';
+import ixerLogo from '../assets/ixer-logo.svg';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,10 +22,8 @@ export const Navbar: React.FC = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-brand rounded-md flex items-center justify-center">
-                 <span className="text-gray-900 font-bold text-xl">I</span>
-              </div>
-              <span className="font-bold text-2xl text-gray-900 tracking-tight">Ixer</span>
+              <img src={ixerLogo} alt="Ixer Logo" className="w-40" />
+              
             </a>
           </div>
 
